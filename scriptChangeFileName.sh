@@ -20,7 +20,7 @@ for file in $(find . -type f )
 		count=$(cat $file | wc -l)
 		#echo $count
 		if [ echo "$(find . -type d)" | grep -q " " ]
-			then mv $(find . -type d) $(   $(find . -type d) | sed -e "s/ /_/g"
+			then mv $(find . -type d) $( $(find . -type d) | sed -e "s/ /_/g" )
 		fi
 		
 		if [ $count -gt 10 ]
