@@ -1,0 +1,28 @@
+<html>
+  <header>
+    <script src="angular.min.js"></script>
+	<script src="app.js"></script>
+  </header>
+  
+  <body ng-app="jhipsterApp">
+  <div ng-controller="MyController">
+  <input ng-model="msg"></input>
+  </br>
+  view 1:
+			{{msg}}
+			
+  
+  </br>
+		
+		view 2:	
+		
+			{{msg}}
+			
+		
+		<div ng-repeat="b in books | filter:msg">
+		book: title={{b.title}}
+		</div>
+</div>
+
+  </body>
+</html>
